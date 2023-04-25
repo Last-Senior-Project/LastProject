@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS `freelance`.`client` (
   `emailclient` VARCHAR(45) NOT NULL,
   `passwordclient` VARCHAR(45) NOT NULL,
   `imgclient` LONGTEXT NOT NULL,
-  `birthclient` DATE NOT NULL,
+  `birthclient` INT(16) NOT NULL,
   UNIQUE INDEX `idclient_UNIQUE` (`idclient` ASC) VISIBLE,
   PRIMARY KEY (`idclient`),
   UNIQUE INDEX `emailclient_UNIQUE` (`emailclient` ASC) VISIBLE)
